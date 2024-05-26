@@ -1,0 +1,40 @@
+/* body {
+    --text-color: #333;
+    --bkg-color: #fff;
+    --anchor-color: #666;
+}
+body.dark {
+    --text-color: #eee;
+    --bkg-color: #111;
+    --anchor-color: #ccc;
+}
+body {
+    color: var(--text-color);
+    background: var(--bkg-color);
+}
+
+a {
+    color: var(--anchor-color);
+} */
+
+/* 基础（白色）模式变量 light */
+body {
+    --text-color: #333;
+    --bkg-color: #fff;
+    --anchor-color: #666;
+}
+
+body[theme=dark] {
+    --text-color: #eee;
+    --bkg-color: #111;
+    --anchor-color: #ccc;
+}
+
+body {
+    color: var(--text-color);
+    background: var(--bkg-color);
+}
+
+a {
+    color: var(--anchor-color);
+}
